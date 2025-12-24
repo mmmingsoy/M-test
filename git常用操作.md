@@ -53,7 +53,7 @@ git pull origin 分支名
 git pull          # 简写
 五、撤销操作
 bash
-# 撤销未暂存的修改（危险！）
+# 撤销未暂存的修改
 git checkout -- 文件名
 
 # 撤销暂存的修改
