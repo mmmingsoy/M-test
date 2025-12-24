@@ -7,6 +7,7 @@ git config --global user.email "你的邮箱"
 # 初始化仓库
 git init
 git clone https://github.com/用户名/仓库名.git
+
 二、日常操作
 bash
 # 查看状态
@@ -23,6 +24,7 @@ git commit -am "说明"  # 添加并提交
 # 查看历史
 git log
 git log --oneline  # 简洁版
+
 三、分支管理
 bash
 # 查看分支
@@ -39,6 +41,7 @@ git merge 要合并的分支名
 
 # 删除分支
 git branch -d 分支名
+
 四、远程仓库
 bash
 # 添加远程仓库
@@ -61,6 +64,7 @@ git reset HEAD 文件名
 
 # 撤销上一次提交
 git revert HEAD
+
 六、储藏功能
 bash
 # 临时保存修改
@@ -71,7 +75,9 @@ git stash pop
 
 # 查看储藏列表
 git stash list
+
 七、常用场景
+
 1. 开发新功能
 bash
 git checkout -b feature-login
@@ -79,13 +85,15 @@ git checkout -b feature-login
 git add .
 git commit -m "添加登录功能"
 git push origin feature-login
+
 2. 更新本地代码
 bash
 git checkout main
 git pull origin main
+
 3. 解决合并冲突
 bash
-# 1. 手动编辑冲突文件
-# 2. 标记已解决
+# 手动编辑冲突文件
 git add 冲突文件
+# 标记已解决
 git commit -m "解决冲突"
