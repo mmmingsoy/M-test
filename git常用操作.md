@@ -1,4 +1,4 @@
-#一、基础配置
+一、基础配置
 bash
 ## 设置用户
 git config --global user.name "你的名字"
@@ -8,7 +8,7 @@ git config --global user.email "你的邮箱"
 git init
 git clone https://github.com/用户名/仓库名.git
 
-#二、日常操作
+二、日常操作
 bash
 ## 查看状态
 git status
@@ -25,7 +25,7 @@ git commit -am "说明"  # 添加并提交
 git log
 git log --oneline  # 简洁版
 
-#三、分支管理
+三、分支管理
 bash
 ## 查看分支
 git branch
@@ -42,7 +42,7 @@ git merge 要合并的分支名
 ## 删除分支
 git branch -d 分支名
 
-#四、远程仓库
+四、远程仓库
 bash
 ## 添加远程仓库
 git remote add origin 仓库地址
@@ -54,7 +54,7 @@ git push          # 简写
 ## 从远程拉取
 git pull origin 分支名
 git pull          # 简写
-#五、撤销操作
+五、撤销操作
 bash
 ## 撤销未暂存的修改
 git checkout -- 文件名
@@ -65,7 +65,7 @@ git reset HEAD 文件名
 ## 撤销上一次提交
 git revert HEAD
 
-#六、储藏功能
+六、储藏功能
 bash
 ## 临时保存修改
 git stash
@@ -76,7 +76,7 @@ git stash pop
 ## 查看储藏列表
 git stash list
 
-#七、常用场景
+七、常用场景
 
 1. 开发新功能
 bash
